@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        
+        .message-container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+            border: 5px solid #2196f3;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 200px;
+            border-bottom: 5px solid #2196f3;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+
+        .message-container h2 {
+            color: #2196f3;
+            margin-top: 15px;
+        }
+
+        .message-container p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+            padding: 0 10px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2196f3;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <!-- Image Container -->
+        <div class="image-container">
+            <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Celebration GIF">
+        </div>
+
+        <!-- Message Content -->
+        <h2>Congratulations! 🎉</h2>
+        <p>You have unlocked the secret message!</p>
+        <p>"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle."</p>
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "try.html";
+        }
+    </script>
+</body>
+</html>
